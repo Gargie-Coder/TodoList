@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-doList</title>
+</head><link rel="stylesheet" href="TodoList.css">
+<body>
+  <h2>TO-doList</h2>
+  <div class="box">
+     <div class="container">
+    
+      <input type="text" id="taskinput" placeholder="Add a new task..." onkeydown="if(event.key==='Enter'){AddItem()}">
+      <input type="date" class="dateinput">
+      <button id="Addtask" onclick="AddItem()">Add</button>
+     </div>
+   <div id="list"></div>
+  </div>
+</body>
+<script src="TodoList.js"></script>
+</html>
